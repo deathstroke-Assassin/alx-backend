@@ -48,11 +48,11 @@ class Server:
         start_idx, end_idx = index_range(page, page_size)
         pageTotal = math.ceil(len(self.__dataset) / page_size)
         info = {
-                'page_size': len(pageData),
-                'page': page,
-                'data': pageData,
-                'next_page': page + 1 if end_idx < len(self.__dataset) else None,
-                'prec_page': page - 1 if start_idx > 0 else None,
-                'total_pages': pageTotal,
+            'page_size': len(pageData),
+            'page': page,
+            'data': pageData,
+            'next_page': page + 1 if end_idx < len(self.__dataset) else None,
+            'prec_page': page - 1 if start_idx > 0 else None,
+            'total_pages': pageTotal,
                 }
         return info
