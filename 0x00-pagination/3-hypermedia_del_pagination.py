@@ -89,7 +89,7 @@ class Server:
         indexinfo = {
             'index': index,
             'next_index': nxtIndex,
-            'page_size':len(pageData),
+            'page_size': len(pageData),
             'data': pageData,
         }
         return indexInfo
