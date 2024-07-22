@@ -42,7 +42,7 @@ class Server:
             return []
         return data[start_idx:end_idx]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         '''get all information about a page'''
         pageData = self.get_page(page, page_size)
         start_idx, end_idx = index_range(page, page_size)
