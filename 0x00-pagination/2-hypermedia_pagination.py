@@ -52,7 +52,7 @@ class Server:
             'page': page,
             'data': pageData,
             'next_page': page + 1 if end_idx < len(self.__dataset) else None,
-            'prec_page': page - 1 if start_idx > 0 else None,
+            'prev_page': page - 1 if start_idx > 0 else None,
             'total_pages': pageTotal,
                 }
         return info
