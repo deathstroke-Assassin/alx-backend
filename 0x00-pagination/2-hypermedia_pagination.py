@@ -2,7 +2,7 @@
 '''simple pagination task1'''
 import csv
 import math
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -53,6 +53,6 @@ class Server:
                 'data': pageData,
                 'next_page': page + 1 if end_idx < len(self.__dataset) else None,
                 'prec_page': page - 1 if start_idx > 0 else None,
-                'total_pages': pageTotal
+                'total_pages': pageTotal,
                 }
         return info
