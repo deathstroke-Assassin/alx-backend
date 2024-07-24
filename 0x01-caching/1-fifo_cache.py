@@ -10,6 +10,7 @@ class FIFOCache(BaseCaching):
         '''Initializes the cache'''
         super().__init__()
         self.cache_data = OrderedDict()
+
     def put(self, key, item):
         ''' puts an item in the cach '''
         if key is None or item is None:
